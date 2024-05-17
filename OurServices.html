@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FarmEasy</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.store.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        /* CSS styles */
+        #services {
+            background: black;
+            background-size: cover;
+            background-position: center;
+            color: #555!important;
+            background-attachment: fixed;
+            padding-top: 150px;
+            padding-bottom: 140px;
+        }
+
+        #services h1 {
+            text-align: center;
+            color: #fff!important;
+            padding-bottom: 10px;
+        }
+
+        #services h1::after {
+            content: '';
+            background: #efefef;
+            display: block;
+            height: 3px;
+            width: 500px;
+            margin: 20px auto 5px;
+        }
+
+        #services h3 {
+            font-weight: 400;
+            color: white;
+            margin: auto;
+        }
+
+        #services p {
+            font-weight: 400;
+            color: white;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        #services i {
+            color: white;
+        }
+
+        .icon {
+            font-size: 40px;
+            margin: 20px auto;
+            padding: 20px;
+            height: 80px;
+            width: 80px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+        }
+
+        .services .col-md-4:hover {
+            background: #007bff;
+            cursor: pointer;
+            transition: 0.7s;
+        }
+
+        /* Notification Styles */
+        .notification {
+            display: none;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            z-index: 9999;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <img src="Logo.png" alt="FarmEasy Logo">
+            <h2>CoffeePoint</h2>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a style="color: #ffffff;" class="nav-link" href="index.html" tabindex="-1" aria-disabled="true">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: #ffffff;" class="nav-link" href="Product.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color:#ffffff;" class="nav-link" href="cart.html">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color:#ffffff;" class="nav-link" href="Aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color:#ffffff;" class="nav-link" href="OurServices.html">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color:#ffffff;" class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h1>Our Services</h1>
+            <div class="row services">
+                <div class="col-md-4 text-center">
+                    <div class="icon">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <h3> 24/7 Support</h3>
+                    <p>on order related queries</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="icon">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <h3> Return within 30 days</h3>
+                    <p>of receiving your order</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="icon">
+                        <i class="fa fa-truck"></i>
+                    </div>
+                    <h3>Get free delivery</h3>
+                    <p>on orders above 99Euro</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notification Element -->
+    <div class="notification" id="cart-notification">Item added to cart!</div>
+
+</body>
+
+</html>
